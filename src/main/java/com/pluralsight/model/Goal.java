@@ -1,9 +1,12 @@
 package com.pluralsight.model;
 
+import org.hibernate.validator.constraints.Range;
+
 /**
  * Created by daniel.arlitt on 1/27/15.
  */
 public class Goal {
+  @Range(min = 1, max = 120)
   private int minutes;
 
   public int getMinutes() {
